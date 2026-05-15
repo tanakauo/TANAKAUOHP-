@@ -1,0 +1,50 @@
+# This workflow will triage pull requests and apply a label based on the
+# paths that are modified in the pull request.
+#
+# To use this workflow, you will need to set up a .github/labeler.yml
+# file with configuration.  For more information, see:
+# https://github.com/actions/labeler
+
+name: Labeler
+on: [pull_request_target]
+
+jobs:
+  label:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+    - uses: actions/labeler@v4
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+            - 名前: Node.js 環境のセットアップ
+  使用例: actions/setup-node@v6.4.0
+  と：
+    # 使用するバージョンを指定します。例: 12.x、10.15.1、>=10.15.0。
+    node-version: # オプション
+    # 使用するバージョン仕様を含むファイル。例: package.json、.nvmrc、.node-version、.tool-versions。
+    node-version-file: # オプション
+    # Nodeが使用するターゲットアーキテクチャ。例：x86、x64。デフォルトではシステムアーキテクチャが使用されます。
+    アーキテクチャ: # オプション
+    # アクションがバージョン仕様を満たす最新の利用可能なバージョンをチェックするようにするには、このオプションを設定します。
+    check-latest: # オプション
+    # 認証用に設定するオプションのレジストリ。プロジェクトレベルの .npmrc および .yarnrc ファイルにレジストリを設定し、env.NODE_AUTH_TOKEN から読み込むように認証を設定します。
+    レジストリURL: # オプション
+    # スコープ付きレジストリに対して認証を行うためのオプションのスコープ。GitHub Packages レジストリ (https://npm.pkg.github.com/) を使用する場合は、リポジトリの所有者にフォールバックします。
+    スコープ: # オプション
+    # node-versions から node ディストリビューションを取得するために使用されます。デフォルト値が設定されているため、通常はユーザーが指定する必要はありません。github.com でこのアクションを実行する場合は、デフォルト値で十分です。GHES で実行する場合、レート制限が発生している場合は、github.com の個人アクセストークンを渡すことができます。
+    token: # オプション、デフォルトは ${{ github.server_url == 'https://github.com' && github.token || '' }}
+    # デフォルトディレクトリにキャッシュするためのパッケージマネージャを指定するために使用します。サポートされている値: npm、yarn、pnpm。
+    キャッシュ: # オプション
+    # 自動キャッシュを無効にするには、false に設定します。デフォルトでは、devEngines.packageManager または package.json の最上位の packageManager フィールドでパッケージ マネージャーとして npm が指定されている場合、キャッシュが有効になります。
+    package-manager-cache: # オプション、デフォルトはtrue
+    # 依存関係ファイルへのパスを指定するために使用します。package-lock.json、yarn.lock など。ワイルドカードまたはファイル名のリストをサポートし、複数の依存関係をキャッシュします。
+    cache-dependency-path: # オプション
+    # Node.jsバイナリをダウンロードする代替ミラーを指定するために使用されます
+    ミラー: # オプション
+    # ミラーから取得する際に認証ヘッダーとして使用されるトークン
+    ミラートークン: # オプション
+          
