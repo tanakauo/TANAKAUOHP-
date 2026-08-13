@@ -389,5 +389,5 @@ nodoguro.jpg alt="焼き台の金網に並べた干物"
 - `site/hamayaki.html` 単体。外部依存なし。Web フォント読み込みなし
 - 画像は `images/...` の相対パスで参照する。トップページと同じ階層に置くこと
 - **既存ファイルを編集しない。** `site/images/` の写真、`docs/codex-implementation-brief.md`、トップページの HTML には一切手を触れない
-- WordPress + SWELL への移植を前提とするため、フレームワークを挟まない素の HTML と CSS で書く
+- **このHTMLは完成後、暫定的に `tanakauo.com` で直接公開される見込みである**（本物のWordPress版ができ次第、削除される。`docs/open-questions.md` §2-3-3）。フレームワークを挟まない素の HTML と CSS で書く
 - §10 の回答は待たない。`docs/open-questions.md` §3-2 の扱いに従って実装を完了させる

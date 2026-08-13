@@ -1,6 +1,10 @@
 # TANAKA UO 公式サイト
 
-WordPress と SWELL を使用して TANAKA UO のHPを作成する。
+素の HTML と CSS で TANAKA UO のHPを作成する。
+
+**WordPress は使わない（2026-08-13 に方針変更）。** 完成したHTMLは、そのまま `tanakauo.com` に暫定公開される見込みである。
+`tanakauo.com` は現時点でおそらくWordPressではない。トップページとして固定される必要も無い。
+「本物」が別途WordPressで作られたら、このHTML一式は削除される。詳細は `docs/open-questions.md` §2-3-3。
 
 ---
 
@@ -15,7 +19,7 @@ WordPress と SWELL を使用して TANAKA UO のHPを作成する。
 | 3 | [`docs/codex-brief-products.md`](docs/codex-brief-products.md) | 商品・メニューページの実装指示。価格を持たない設計 |
 | 4 | [`docs/seo-and-weekly-operations.md`](docs/seo-and-weekly-operations.md) | 構造化データ、title と description、内部リンク、週次運用 |
 | 5 | [`docs/open-questions.md`](docs/open-questions.md) | **確認事項の統合と決着。未確定項目の扱いはここが正。** 各指示書の確認事項節より優先する |
-| 6 | [`docs/wordpress-swell-migration.md`](docs/wordpress-swell-migration.md) | SWELL への移植手順 |
+| 6 | [`docs/wordpress-swell-migration.md`](docs/wordpress-swell-migration.md) | **今回の納品対象外。** 将来「本物」をWordPressで作る際の参考資料 |
 | 7 | [`docs/hp-requirements-checklist.md`](docs/hp-requirements-checklist.md) | 掲載項目の棚卸し。書体・配色は定義していない（1に委譲） |
 
 ### 着手前に必ず確認すること
@@ -52,8 +56,10 @@ WordPress と SWELL を使用して TANAKA UO のHPを作成する。
 
 ### 納品
 
-`index.html` 単体。外部依存なし、Web フォントの読み込みなし。画像と映像は相対パス。
-WordPress + SWELL への移植を前提とするため、フレームワークを挟まない素の HTML と CSS で書く。
+`index.html` 単体（浜焼き・BBQ、商品ページも同様に単体ファイル）。外部依存なし、Web フォントの読み込みなし。画像と映像は相対パス。
+**このHTMLは暫定的に `tanakauo.com` へ直接公開される見込みである。** フレームワークを挟まない素の HTML と CSS で書くのはそのためであり、
+WordPress への移植を前提としているのではない（`docs/open-questions.md` §2-3-3）。
+**`tanakauo.com` のルート（トップ）に置く必要は無い。** 置き場所は田中氏が決める。相対パスで完結させておけば、どこに置いても動く。
 実装後、指示書 §8 の検証項目を機械的に照合してから返すこと。
 
 ---

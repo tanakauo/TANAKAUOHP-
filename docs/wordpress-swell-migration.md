@@ -8,6 +8,18 @@ related: docs/codex-implementation-brief.md
 
 # WordPress + SWELL 移植手順書
 
+## この文書の位置づけ（2026-08-13 の指示により変更）
+
+**今回の Codex 納品の対象ではない。** 静的HTMLは、完成後そのまま `tanakauo.com` に暫定公開される見込みである。
+`tanakauo.com` は現時点でおそらく WordPress ではない。WordPress版の「本物」は別途つくられ、
+それが完成した時点で、この静的HTMLは**削除される。**
+
+したがって Codex は、この文書の手順を実行する必要が無い。素の HTML と CSS で書くという方針（各指示書 §末尾）は変えない。
+理由は「SWELLへ移植するため」ではなく、**依存の無いファイルとして単体で公開できるようにするため**である。
+「本物」が WordPress で作られる際に参考にできるよう、この手順書は残しておく。
+
+---
+
 静的HTMLで固めた仕様と原稿を、SWELL テーマに載せ替える手順。
 配色・書体・禁止事項の正は `docs/codex-implementation-brief.md` であり、**移植後もそれが守られていることが完了条件**である。
 
