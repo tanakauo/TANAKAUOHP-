@@ -12,8 +12,10 @@ WordPress と SWELL を使用して TANAKA UO のHPを作成する。
 |---|---|---|
 | 1 | [`docs/codex-implementation-brief.md`](docs/codex-implementation-brief.md) | **トップページの実装指示。まずこれを全文読む。** §0 破棄／§1 禁止事項12項目／書体／配色／ページ構成／確定原稿／素材／検証 |
 | 2 | [`docs/codex-brief-hamayaki.md`](docs/codex-brief-hamayaki.md) | 浜焼きページの実装指示 |
-| 3 | [`docs/seo-and-weekly-operations.md`](docs/seo-and-weekly-operations.md) | 構造化データ、title と description、内部リンク、週次運用 |
-| 4 | [`docs/hp-requirements-checklist.md`](docs/hp-requirements-checklist.md) | 掲載項目の棚卸し。書体・配色は定義していない（1に委譲） |
+| 3 | [`docs/codex-brief-products.md`](docs/codex-brief-products.md) | 商品・メニューページの実装指示。価格を持たない設計 |
+| 4 | [`docs/seo-and-weekly-operations.md`](docs/seo-and-weekly-operations.md) | 構造化データ、title と description、内部リンク、週次運用 |
+| 5 | [`docs/wordpress-swell-migration.md`](docs/wordpress-swell-migration.md) | SWELL への移植手順。SWELL固有の項目は要確認を明示 |
+| 6 | [`docs/hp-requirements-checklist.md`](docs/hp-requirements-checklist.md) | 掲載項目の棚卸し。書体・配色は定義していない（1に委譲） |
 
 ### 着手前に必ず確認すること
 
@@ -37,11 +39,6 @@ WordPress + SWELL への移植を前提とするため、フレームワーク�
 実装後、指示書 §8 の検証項目を機械的に照合してから返すこと。
 
 ---
-
-## 未着手
-
-- 商品・メニューページの実装指示
-- WordPress + SWELL への移植手順
 
 ## 履歴（実装の参照先にしない）
 
