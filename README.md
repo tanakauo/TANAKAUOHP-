@@ -14,14 +14,22 @@ WordPress と SWELL を使用して TANAKA UO のHPを作成する。
 | 2 | [`docs/codex-brief-hamayaki.md`](docs/codex-brief-hamayaki.md) | 浜焼きページの実装指示 |
 | 3 | [`docs/codex-brief-products.md`](docs/codex-brief-products.md) | 商品・メニューページの実装指示。価格を持たない設計 |
 | 4 | [`docs/seo-and-weekly-operations.md`](docs/seo-and-weekly-operations.md) | 構造化データ、title と description、内部リンク、週次運用 |
-| 5 | [`docs/wordpress-swell-migration.md`](docs/wordpress-swell-migration.md) | SWELL への移植手順。SWELL固有の項目は要確認を明示 |
-| 6 | [`docs/hp-requirements-checklist.md`](docs/hp-requirements-checklist.md) | 掲載項目の棚卸し。書体・配色は定義していない（1に委譲） |
+| 5 | [`docs/open-questions.md`](docs/open-questions.md) | **確認事項の統合と決着。未確定項目の扱いはここが正。** 各指示書の確認事項節より優先する |
+| 6 | [`docs/wordpress-swell-migration.md`](docs/wordpress-swell-migration.md) | SWELL への移植手順 |
+| 7 | [`docs/hp-requirements-checklist.md`](docs/hp-requirements-checklist.md) | 掲載項目の棚卸し。書体・配色は定義していない（1に委譲） |
 
 ### 着手前に必ず確認すること
 
 - **§0 の「旧仕様の破棄」を読む。** 金茶 `#B0894E`、明朝の全面使用、写真に重ねる縦書きコピー、薄暮ダークのヒーロー、ロゴのプレート画像、見出しごとの小英字ラベル。これらは過去の指示書に書かれているが**すべて破棄されている**
+- **名刺から採るのは、ワードマーク「TANAKA UO」の書体と、住所・連絡先の表記だけ。** 名刺の世界観（地色・文字色・補助色・欧文 Georgia）は移植しない
 - **§1 の禁止事項12項目を守る。** 特に 11（一海および畑地優二に一切触れない）と 12（法人名に言及しない）は絶対
 - 数字と英字は欧文フォントが受け持つ。和文の全角字形で出してはならない
+- **未確定の項目を回答待ちにしない。** `docs/open-questions.md` §3 に全件の扱いが定めてある。**「確認中」「準備中」と書かず、欄ごと出さない**
+
+### 着手を止める項目は無い
+
+確認事項48件を統合し、23件を決着させ、残り25件にも「確定するまでの扱い」を定めた。
+公開の直前にだけ、営業日と営業時間、Googleビジネスプロフィールとの一致、ドメインの向き先の3件を確認する。
 
 ### 素材
 
