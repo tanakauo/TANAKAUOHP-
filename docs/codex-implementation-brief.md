@@ -217,15 +217,27 @@ CONTACT   tanakauojapan@gmail.com
 
 ## 5｜素材
 
-| ファイル | 用途 |
-|---|---|
-| `media/ariake.mp4` | 有明海。全幅の映像（H.264・9.5MB） |
-| `images/ariake-sunset.jpg` | 上記映像の `poster`。フォールバックも兼ねる |
-| `images/ariake-tide.jpg` | 「選定」 |
-| `images/sumibi.jpg` | 「魚の仕事」写真2枚並び 左 |
-| `images/nodoguro.jpg` | 同 右 |
-| `images/yanagawa.jpg` | 「記す」 |
-| `images/tanaka.jpg` | 署名部の丸型 |
+**写真は1枚につき1ページ。** 同じ写真をトップと下層で使い回さない。下記はトップページの持ち分である。
+
+| ファイル | 用途 | 実寸 |
+|---|---|---|
+| `media/ariake.mp4` | 有明海。全幅の映像（H.264・9.5MB） | 縦撮り |
+| `images/ariake-sunset.jpg` | 上記映像の `poster`。フォールバックも兼ねる | 1200x675 |
+| `images/ariake-tide.jpg` | 「選定」 | 1200x675 |
+| `images/sumibi.jpg` | 「魚の仕事」写真2枚並び 左 | 946x1267 |
+| （未取得） | 同 右。仕込みの手元を想定 | 要撮影 |
+| `images/yanagawa.jpg` | 「記す」 | 1206x681 |
+| `images/tanaka.jpg` | 署名部の丸型 | 507x900 |
+
+`images/mise.jpg`（店舗の浜焼きスペース）と `images/nodoguro.jpg`（網の干物）は**浜焼きページの持ち分**とする。トップページでは使わない。詳細は `docs/codex-brief-hamayaki.md`。
+
+写真2枚並びの右側が揃うまでは、左の `sumibi.jpg` 1枚を全幅で置く。**空の枠を作らない。**
+
+### 素材の状態
+
+- `mise.jpg` `sumibi.jpg` `nodoguro.jpg` はInstagram投稿の動画から起こしたもの。右下に焼き込まれていたミュートアイコンは下端を切って除去済み。そのぶん元より縦が詰まっている
+- 解像度が高くないため、表示幅は実寸を超えないこと。`sumibi.jpg` は幅560px程度まで、`nodoguro.jpg` は760px程度までを上限とする
+- 元の動画または未圧縮の写真があれば差し替えたい（確認事項）
 
 映像は次の形で実装する。読み込めない環境では `poster` が残る。
 
