@@ -1,5 +1,5 @@
 ---
-title: Codex実装指示書 - TANAKA UO 浜焼きページ
+title: Codex実装指示書 - TANAKA UO 浜焼き・BBQページ
 date: 2026-08-13
 version: 1.0
 depends_on: docs/codex-implementation-brief.md（トップページ v2.0）
@@ -7,7 +7,7 @@ project: TANAKA UO
 status: 実装依頼（着手可。未確定項目の扱いは docs/open-questions.md §3-2 で確定済み）
 ---
 
-# Codex実装指示書 - TANAKA UO 浜焼きページ v1.0
+# Codex実装指示書 - TANAKA UO 浜焼き・BBQページ v1.0
 
 発行：2026-08-13／田中雄一郎
 用途：Codex への実装依頼。トップページ指示書 v2.0（`docs/codex-implementation-brief.md`）の下位文書。
@@ -48,6 +48,8 @@ status: 実装依頼（着手可。未確定項目の扱いは docs/open-questio
 14. 品目名を推測で書かない。写真に写っているものも、確定するまで品書きに載せない
 15. 「絶品」「至福」「贅沢」式の形容を使わない。本人の文体は短い平叙文
 16. 予約フォーム・カート・決済ボタンを実装しない。導線は電話とメールのみ
+17. **会員制度・不定期魚BOXに触れない。** 一般公募の制度ではない（`docs/open-questions.md` D32 D33）
+18. 事業計画書の数値（売上、客単価、来店客数）を1つも書かない
 
 ## 2｜書体
 
@@ -123,7 +125,7 @@ status: 実装依頼（着手可。未確定項目の扱いは docs/open-questio
 
 **1. 見出し部**（テキスト要素は下記4つのみ。上パディングは `pt-24` 相当を上限）
 ```
-浜焼き
+浜焼き・BBQ
 炭にかけて、その場で。
 店先に炭火の台があります。仕入れた魚を、その日のうちに焼いて出します。
 ［ボタン］ご予約・お問い合わせ
@@ -133,7 +135,7 @@ status: 実装依頼（着手可。未確定項目の扱いは docs/open-questio
 **2. 焼く場所**（写真の下にキャプション。写真の上には置かない）
 ```
 ［全幅写真 mise.jpg］
-キャプション：店先の浜焼き台。福岡県柳川市大和町中島。
+キャプション：店先の浜焼き台。福岡県柳川市。
 ```
 
 **3. 火のこと**
@@ -202,7 +204,7 @@ TANAKA UO
 by YUICHIRO TANAKA
 ROOTED, STILL MOVING
 
-SHOP      〒839-0254 福岡県柳川市大和町中島883-1 ／ 080-9249-3107
+SHOP      福岡県柳川市 ／ 080-9249-3107
 CONTACT   tanakauojapan@gmail.com
           Instagram @tanakauojapan
           LINE @tanakauo

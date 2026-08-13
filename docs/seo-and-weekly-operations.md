@@ -16,7 +16,7 @@ related: docs/codex-implementation-brief.md
 
 ## 1｜構造化データ
 
-トップページの `<head>` に JSON-LD を1つ置く。浜焼きを店内で提供するため、`Restaurant`（`LocalBusiness` のサブタイプ）ではなく、物販が主で飲食も併設という実態に合わせて `LocalBusiness` を主とし、`servesCuisine` は使わない。
+トップページの `<head>` に JSON-LD を1つ置く。浜焼き・BBQを店頭で提供するため、`Restaurant`（`LocalBusiness` のサブタイプ）ではなく、物販が主で飲食も併設という実態に合わせて `LocalBusiness` を主とし、`servesCuisine` は使わない。
 
 ```html
 <script type="application/ld+json">
@@ -26,7 +26,7 @@ related: docs/codex-implementation-brief.md
   "@id": "https://www.tanakauo.com/#shop",
   "name": "TANAKA UO",
   "alternateName": "タナカウオ",
-  "description": "福岡県柳川市の魚屋。魚の選定、加工、販売、発信を一貫して行う。店頭では炭火の浜焼きも提供しています。",
+  "description": "福岡県柳川市の魚屋。魚の選定、加工、販売、発信を一貫して行う。店頭では炭火の浜焼き・BBQも提供しています。",
   "url": "https://www.tanakauo.com/",
   "telephone": "+81-80-9249-3107",
   "email": "tanakauojapan@gmail.com",
@@ -40,7 +40,6 @@ related: docs/codex-implementation-brief.md
     "postalCode": "839-0254",
     "addressRegion": "福岡県",
     "addressLocality": "柳川市",
-    "streetAddress": "大和町中島883-1",
     "addressCountry": "JP"
   },
   "sameAs": [
@@ -84,7 +83,11 @@ related: docs/codex-implementation-brief.md
 
 サイト本文・構造化データ・Googleビジネスプロフィールの**3箇所で完全に一致させる。** 1箇所だけ直さない。
 
-浜焼きページを作ったら、そのページに `Menu` や `Offer` を足すかは、価格が確定してから判断する。価格未確定のまま構造化データに載せない。
+**`streetAddress` を入れていないのは意図的である。** 事業計画書に 883-1（事業所）と 884（対面営業場所）の2つがあり、
+客が実際に行くのは 884 のほうである。番地が確定するまで `streetAddress` を書かない（`docs/open-questions.md` Q26）。
+市までは確実なので残す。**誤った番地は、番地が無いことより悪い。** 地図アプリが別の建物を指す。
+
+浜焼き・BBQページを作ったら、そのページに `Menu` や `Offer` を足すかは、価格が確定してから判断する。価格未確定のまま構造化データに載せない。
 
 ---
 
@@ -99,10 +102,10 @@ title       TANAKA UO｜目利き 田中雄一郎（福岡・柳川の魚屋）
 description 福岡県柳川市の魚屋 TANAKA UO。魚の選定、加工、販売、発信を一貫して行う目利き 田中雄一郎が、有明海と九州各地の漁港、仲卸、漁師をつないで、その日いちばん良い魚を届けます。
 ```
 
-### 浜焼き
+### 浜焼き・BBQ
 
 ```
-title       浜焼き｜TANAKA UO（福岡・柳川）
+title       浜焼き・BBQ｜TANAKA UO（福岡・柳川）
 description 店先の炭で、その日仕入れた魚をそのまま焼きます。柳川の道沿い、屋根の下の席で。仕入れの内容はその日次第です。魚屋がやっている浜焼きです。
 ```
 
@@ -121,7 +124,9 @@ description 鮮魚、干物、急速凍結の加工品、お任せセット。�
 
 ```
 title       ご予約・お問い合わせ｜TANAKA UO（福岡・柳川）
-description ご予約、贈り物のご相談、店舗への卸、目利きの指導について。メール、Instagram、LINE、お電話で承ります。福岡県柳川市大和町中島883-1。
+description ご予約、贈り物のご相談、店舗への卸、目利きの指導について。メール、Instagram、LINE、お電話で承ります。福岡県柳川市の魚屋 TANAKA UO。
+
+※ 番地を書いていないのは意図的（open-questions.md Q26）。確定したら足す。
 ```
 
 ---
@@ -144,9 +149,9 @@ description ご予約、贈り物のご相談、店舗への卸、目利きの�
 |---|---|---|
 | トップ 見出し部 | お問い合わせ | ご予約・お問い合わせ |
 | トップ「販売」 | 商品・メニュー | 商品を見る |
-| トップ「販売」 | 浜焼き | 浜焼きについて |
+| トップ「販売」 | 浜焼き・BBQ | 浜焼き・BBQについて |
 | トップ「発信」 | Instagram | Instagram @tanakauojapan |
-| 浜焼き 末尾 | お問い合わせ | ご予約・お問い合わせ |
+| 浜焼き・BBQ 末尾 | お問い合わせ | ご予約・お問い合わせ |
 | 商品 末尾 | お問い合わせ | ご予約・お問い合わせ |
 
 同じ意図のボタンを1ページに2つ置かない。「ご予約」「お問い合わせ」「ご相談」を混在させず、**「ご予約・お問い合わせ」の1種類に統一**する。
@@ -255,7 +260,8 @@ description ご予約、贈り物のご相談、店舗への卸、目利きの�
 ## 8｜公開前の確認
 
 ```
-1. 電話番号・住所・メールが、サイト／構造化データ／Googleビジネスプロフィールで完全に一致
+1. 電話番号・メールが、サイト／構造化データ／Googleビジネスプロフィールで完全に一致
+1b. 番地がどこにも出ていない（Q26 が未確定のあいだ）。市までの表記は可
 2. 営業時間が確定し、3箇所すべてで一致（未確定なら構造化データから省く）
 3. title と description が全ページ固有
 4. h1 が各ページ1つ
