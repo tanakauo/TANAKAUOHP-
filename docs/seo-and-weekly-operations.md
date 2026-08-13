@@ -26,7 +26,7 @@ related: docs/codex-implementation-brief.md
   "@id": "https://www.tanakauo.com/#shop",
   "name": "TANAKA UO",
   "alternateName": "タナカウオ",
-  "description": "福岡県柳川市の魚屋。選定、加工、販売、発信。魚の仕事を一貫して行う。店頭では炭火の浜焼きも提供しています。",
+  "description": "福岡県柳川市の魚屋。魚の選定、加工、販売、発信を一貫して行う。店頭では炭火の浜焼きも提供しています。",
   "url": "https://www.tanakauo.com/",
   "telephone": "+81-80-9249-3107",
   "email": "tanakauojapan@gmail.com",
@@ -82,7 +82,7 @@ related: docs/codex-implementation-brief.md
 
 ```
 title       TANAKA UO｜目利き 田中雄一郎（福岡・柳川の魚屋）
-description 福岡県柳川市の魚屋 TANAKA UO。選定、加工、販売、発信。魚の仕事を一貫して行う目利き 田中雄一郎が、有明海と九州各地の漁港、仲卸、漁師をつないで、その日いちばん良い魚を届けます。
+description 福岡県柳川市の魚屋 TANAKA UO。魚の選定、加工、販売、発信を一貫して行う目利き 田中雄一郎が、有明海と九州各地の漁港、仲卸、漁師をつないで、その日いちばん良い魚を届けます。
 ```
 
 ### 浜焼き
