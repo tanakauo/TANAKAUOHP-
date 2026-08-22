@@ -24,8 +24,9 @@
 | 3 | [`docs/codex-brief-products.md`](docs/codex-brief-products.md) | 商品・メニューページの実装指示。価格を持たない設計 |
 | 4 | [`docs/seo-and-weekly-operations.md`](docs/seo-and-weekly-operations.md) | 構造化データ、title と description、内部リンク、週次運用 |
 | 5 | [`docs/open-questions.md`](docs/open-questions.md) | **確認事項の統合と決着。未確定項目の扱いはここが正。** 各指示書の確認事項節より優先する |
-| 6 | [`docs/wordpress-swell-migration.md`](docs/wordpress-swell-migration.md) | **今回の納品対象外。** 将来「本物」をWordPressで作る際の参考資料 |
+| 6 | [`docs/wordpress-swell-migration.md`](docs/wordpress-swell-migration.md) | **Codexの執筆には不要。** WordPress版へ組み込む段階の手順書（田中氏用） |
 | 7 | [`docs/hp-requirements-checklist.md`](docs/hp-requirements-checklist.md) | 掲載項目の棚卸し。書体・配色は定義していない（1に委譲） |
+| 8 | [`docs/live-site-takedown.md`](docs/live-site-takedown.md) | **Codexの執筆には不要。** 公開中サイトの止血手順（田中氏用） |
 
 ### 着手前に必ず確認すること
 
