@@ -1,0 +1,8 @@
+# 外部スキルの実体はコミットしない。
+# skills-lock.json にソースとハッシュを記録してあるので、下記コマンドで復元できる。
+#   npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-frontend"
+.agents/
+.claude/skills/
+
+node_modules/
+.DS_Store

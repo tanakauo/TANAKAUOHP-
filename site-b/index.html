@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TANAKA UO 柳川の魚屋｜今週の旬魚・ご予約・産地直送</title>
+<meta name="description" content="福岡県柳川市の目利き魚屋 TANAKA UO。今週の旬魚、予約限定の熟成魚・希少魚、お任せセットの地方発送。金・土・日営業、月〜木は市場で仕入れの日。">
+<link rel="canonical" href="https://tanakauo.com/">
+<meta property="og:title" content="TANAKA UO 柳川の魚屋｜今週の旬魚・ご予約">
+<meta property="og:description" content="目利き38年。今週の旬魚と予約商品のご案内。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tanakauo.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "TANAKA UO",
+  "alternateName": "タナカ ウオ",
+  "description": "鮮魚販売・予約商品・産地直送。目利きを核とする柳川の魚屋。",
+  "founder": "田中 雄一郎",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "福岡県",
+    "addressLocality": "柳川市",
+    "streetAddress": "大和町中島883-1",
+    "addressCountry": "JP"
+  },
+  "email": "tanakauojapan@gmail.com",
+  "url": "https://tanakauo.com",
+  "sameAs": ["https://www.instagram.com/tanakauojapan/"],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Friday","Saturday","Sunday"],
+    "opens": "10:00",
+    "closes": "18:00"
+  }],
+  "slogan": "ROOTED, STILL MOVING"
+}
+</script>
+<style>
+:root{
+  --navy:#0d1f33;
+  --linen:#e8e2d4;
+  --linen-bg:#f2eee4;
+  --gray:#6b6b6b;
+  --white:#fffdf8;
+  --line:rgba(13,31,51,.16);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Noto Serif JP',"Hiragino Mincho ProN",serif;
+  background:var(--linen-bg);color:var(--navy);
+  line-height:1.85;letter-spacing:.05em;font-weight:400;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+/* top info bar */
+.bar{background:var(--navy);color:var(--linen);font-size:12px;letter-spacing:.14em;text-align:center;padding:9px 12px}
+.bar strong{font-weight:500}
+
+/* header */
+header{position:sticky;top:0;z-index:100;background:rgba(242,238,228,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-weight:700;letter-spacing:.24em;font-size:18px}
+.logo small{display:block;font-size:9px;letter-spacing:.3em;color:var(--gray);font-weight:400}
+nav ul{display:flex;gap:24px;list-style:none;font-size:13px}
+nav a:hover{opacity:.6}
+.hd .order{background:var(--navy);color:var(--linen);padding:9px 20px;font-size:12.5px;letter-spacing:.18em}
+@media(max-width:860px){nav{display:none}}
+
+/* hero */
+.hero{background:var(--navy);color:var(--linen);position:relative;overflow:hidden}
+.hero::before{
+  content:"魚";position:absolute;right:-40px;bottom:-90px;font-size:380px;font-weight:900;
+  color:rgba(232,226,212,.05);line-height:1;pointer-events:none;
+}
+.hero .wrap{padding:84px 22px 76px;position:relative}
+.badge{display:inline-block;border:1px solid rgba(232,226,212,.4);font-size:11px;letter-spacing:.3em;padding:6px 16px;margin-bottom:24px}
+.hero h1{font-size:clamp(28px,5.4vw,52px);font-weight:700;letter-spacing:.1em;line-height:1.4}
+.hero .lead{margin-top:20px;font-size:15px;color:rgba(232,226,212,.8);max-width:600px}
+.hero .cta{margin-top:38px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 40px;font-size:13.5px;letter-spacing:.2em;border:1px solid var(--linen);transition:.3s}
+.btn.fill{background:var(--linen);color:var(--navy);font-weight:500}
+.btn.fill:hover{background:transparent;color:var(--linen)}
+.btn.ghost:hover{background:var(--linen);color:var(--navy)}
+.hero .slogan{margin-top:44px;font-size:11px;letter-spacing:.4em;color:rgba(232,226,212,.55)}
+
+/* section base */
+section{padding:88px 0}
+.sec-head{text-align:center;margin-bottom:52px}
+.sec-head .en{font-size:11px;letter-spacing:.42em;color:var(--gray)}
+.sec-head h2{font-size:clamp(23px,3.6vw,32px);font-weight:700;letter-spacing:.14em;margin-top:8px}
+.sec-head .date{margin-top:10px;font-size:12px;color:var(--gray)}
+
+/* fish cards */
+.fish-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.card{background:var(--white);border:1px solid var(--line)}
+.card .ph{
+  aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(150deg,#16324f,#0d1f33);color:var(--linen);
+  font-size:44px;font-weight:700;
+}
+.card .bd{padding:16px 16px 20px}
+.card h3{font-size:15.5px;font-weight:700;letter-spacing:.12em}
+.card .use{font-size:11.5px;color:var(--gray);margin-top:4px}
+.card .price{margin-top:10px;font-size:13px;border-top:1px solid var(--line);padding-top:10px}
+.card .price b{font-size:16px}
+.stock{display:inline-block;font-size:10px;letter-spacing:.2em;padding:2px 8px;margin-top:8px;border:1px solid var(--navy)}
+.stock.few{border-color:#8a5a2b;color:#8a5a2b}
+@media(max-width:960px){.fish-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:620px){.fish-grid{grid-template-columns:repeat(2,1fr)}}
+.sec-note{text-align:center;margin-top:28px;font-size:12px;color:var(--gray)}
+
+/* products */
+.prod{background:var(--white)}
+.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.prod-card{border:1px solid var(--line);padding:34px 28px;background:var(--linen-bg)}
+.prod-card .no{font-size:11px;letter-spacing:.3em;color:var(--gray)}
+.prod-card h3{font-size:18px;font-weight:700;margin:10px 0 12px;letter-spacing:.1em}
+.prod-card p{font-size:13.5px;color:#414a55}
+.prod-card .pr{margin-top:16px;font-size:13px;color:var(--navy)}
+.prod-card .pr b{font-size:17px}
+@media(max-width:860px){.prod-grid{grid-template-columns:1fr}}
+
+/* gift banner */
+.gift{background:linear-gradient(120deg,#16324f,var(--navy));color:var(--linen);padding:64px 0}
+.gift .in{display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+.gift h2{font-size:clamp(20px,3vw,28px);font-weight:700;letter-spacing:.12em}
+.gift p{margin-top:10px;font-size:13.5px;color:rgba(232,226,212,.8)}
+
+/* calendar */
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;max-width:820px;margin:0 auto}
+.day{text-align:center;padding:20px 4px 16px;border:1px solid var(--line);background:var(--white);font-size:13px}
+.day .dw{font-size:11px;letter-spacing:.2em;color:var(--gray)}
+.day .st{margin-top:8px;font-weight:700;font-size:14px}
+.day.closed{background:transparent;color:var(--gray)}
+.day.open{background:var(--navy);color:var(--linen);border-color:var(--navy)}
+.day.open .dw{color:rgba(232,226,212,.7)}
+.cal-cap{text-align:center;margin-top:24px;font-size:13px;color:#414a55;max-width:640px;margin-left:auto;margin-right:auto}
+@media(max-width:620px){.cal-grid{gap:4px}.day{padding:12px 2px}}
+
+/* news */
+.news{background:var(--white)}
+.news li{list-style:none;display:grid;grid-template-columns:110px 84px 1fr;gap:16px;padding:18px 6px;border-bottom:1px solid var(--line);font-size:14px;align-items:baseline}
+.news time{color:var(--gray);font-size:12.5px}
+.news .tag{font-size:10.5px;border:1px solid var(--line);text-align:center;padding:2px 0;letter-spacing:.18em;color:var(--gray)}
+@media(max-width:620px){.news li{grid-template-columns:1fr;gap:4px}}
+
+/* flow + access */
+.flow-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:step}
+.step{background:var(--white);border:1px solid var(--line);padding:30px 26px}
+.step::before{counter-increment:step;content:"0" counter(step);font-size:12px;letter-spacing:.3em;color:var(--gray)}
+.step h3{font-size:16px;font-weight:700;margin:10px 0 10px}
+.step p{font-size:13px;color:#414a55}
+@media(max-width:860px){.flow-grid{grid-template-columns:1fr}}
+.access dl{display:grid;grid-template-columns:160px 1fr;max-width:720px;margin:0 auto;border-top:1px solid var(--line)}
+.access dt,.access dd{padding:16px 8px;border-bottom:1px solid var(--line);font-size:14px}
+.access dt{color:var(--gray)}
+@media(max-width:620px){.access dl{grid-template-columns:1fr}.access dt{border-bottom:none;padding-bottom:0}}
+
+/* footer */
+.foot-cta{background:var(--navy);color:var(--linen);text-align:center;padding:80px 0}
+.foot-cta h2{font-size:clamp(22px,3.4vw,30px);font-weight:700;letter-spacing:.14em}
+.foot-cta p{margin:16px auto 34px;font-size:14px;color:rgba(232,226,212,.8);max-width:560px}
+footer{background:#0a1828;color:rgba(232,226,212,.7);padding:38px 0;font-size:12px}
+.ft{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;align-items:center}
+.ft .brand{letter-spacing:.28em;color:var(--linen);font-size:14px}
+</style>
+</head>
+<body>
+
+<div class="bar">今週の営業：<strong>金・土・日 10:00–18:00</strong>｜月〜木は市場仕入れのため店休｜ご予約は前日まで</div>
+
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="#">TANAKA UO<small>SAKANA — YANAGAWA</small></a>
+    <nav aria-label="主要メニュー">
+      <ul>
+        <li><a href="#season">今週の旬魚</a></li>
+        <li><a href="#products">予約商品</a></li>
+        <li><a href="#calendar">営業カレンダー</a></li>
+        <li><a href="#news">お知らせ</a></li>
+        <li><a href="#access">アクセス</a></li>
+      </ul>
+    </nav>
+    <a class="order" href="#reserve">ご予約</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="badge">目利き38年の魚屋</p>
+    <h1>今週いちばん良い魚を、<br>目利きが選んでお渡しします。</h1>
+    <p class="lead">柳川・唐津・久留米——複数の市場を毎朝比較して、その日ほんとうに良い魚だけを仕入れる。福岡県柳川市の設計型魚屋、TANAKA UO です。</p>
+    <div class="cta">
+      <a class="btn fill" href="#season">今週の旬魚を見る</a>
+      <a class="btn ghost" href="#reserve">魚を予約する</a>
+    </div>
+    <p class="slogan">ROOTED, STILL MOVING — 根を張り、変わり続けていく</p>
+  </div>
+</section>
+
+<section id="season">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="en">THIS WEEK'S FISH</p>
+      <h2>今週の旬魚</h2>
+      <p class="date">2026.07.06 更新｜入荷・相場により変動します</p>
+    </div>
+    <div class="fish-grid">
+      <div class="card">
+        <div class="ph">鯛</div>
+        <div class="bd">
+          <h3>真鯛</h3><p class="use">刺身・塩焼き・鯛めし</p>
+          <p class="price">1尾 <b>2,800</b>円〜</p>
+          <span class="stock">予約可</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph">伊</div>
+        <div class="bd">
+          <h3>イサキ</h3><p class="use">初夏の脂・刺身/塩焼き</p>
+          <p class="price">1尾 <b>1,600</b>円〜</p>
+          <span class="stock">予約可</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph">鯵</div>
+        <div class="bd">
+          <h3>アジ</h3><p class="use">たたき・なめろう・フライ</p>
+          <p class="price">1尾 <b>500</b>円〜</p>
+          <span class="stock">予約可</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph">鱸</div>
+        <div class="bd">
+          <h3>スズキ</h3><p class="use">洗い・ムニエル</p>
+          <p class="price">1尾 <b>2,200</b>円〜</p>
+          <span class="stock few">残りわずか</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph">鰯</div>
+        <div class="bd">
+          <h3>イワシ</h3><p class="use">梅煮・塩焼き・つみれ</p>
+          <p class="price">1盛 <b>600</b>円〜</p>
+          <span class="stock">予約可</span>
+        </div>
+      </div>
+    </div>
+    <p class="sec-note">※ 価格帯は目安です。当日の競り値・サイズにより変わります。下処理(鱗・内臓・三枚おろし)無料。</p>
+  </div>
+</section>
+
+<section id="products" class="prod">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="en">RESERVATION ONLY</p>
+      <h2>予約限定の商品</h2>
+    </div>
+    <div class="prod-grid">
+      <div class="prod-card">
+        <p class="no">SELECT 01</p>
+        <h3>目利きお任せセット</h3>
+        <p>その週いちばん良い魚を、ご予算と用途に合わせて目利きが組みます。刺身用・焼き物用の下処理までしてお渡し。</p>
+        <p class="pr"><b>3,000</b>円 / <b>5,000</b>円 / <b>10,000</b>円</p>
+      </div>
+      <div class="prod-card">
+        <p class="no">SELECT 02</p>
+        <h3>熟成魚・希少魚</h3>
+        <p>寝かせて旨味を引き出した熟成魚、市場でも数の少ない希少魚。入荷はInstagramで告知し、予約優先でお分けします。</p>
+        <p class="pr">時価(内容により応相談)</p>
+      </div>
+      <div class="prod-card">
+        <p class="no">SELECT 03</p>
+        <h3>真空・急速凍結便(地方発送)</h3>
+        <p>急速凍結機(Art Freezer)で旬のまま閉じ込めた真空商品。ご自宅用にも、贈り物にも。全国へお届けします。</p>
+        <p class="pr"><b>4,000</b>円〜(送料別)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gift">
+  <div class="wrap in">
+    <div>
+      <h2>贈答・季節のご予約 承ります</h2>
+      <p>お中元・お盆のお集まり・帰省のお土産に。のし対応・受取日指定できます。数に限りがあるため、お早めにご相談ください。</p>
+    </div>
+    <a class="btn ghost" href="#reserve">贈答の相談をする</a>
+  </div>
+</section>
+
+<section id="calendar">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="en">OPEN CALENDAR</p>
+      <h2>営業カレンダー</h2>
+    </div>
+    <div class="cal-grid">
+      <div class="day closed"><p class="dw">月</p><p class="st">市場</p></div>
+      <div class="day closed"><p class="dw">火</p><p class="st">市場</p></div>
+      <div class="day closed"><p class="dw">水</p><p class="st">市場</p></div>
+      <div class="day closed"><p class="dw">木</p><p class="st">市場</p></div>
+      <div class="day open"><p class="dw">金</p><p class="st">営業</p></div>
+      <div class="day open"><p class="dw">土</p><p class="st">営業</p></div>
+      <div class="day open"><p class="dw">日</p><p class="st">営業</p></div>
+    </div>
+    <p class="cal-cap">月〜木は柳川・唐津・久留米の市場と産地をまわる<strong>仕入れの日</strong>。金・土・日(10:00–18:00)に、選び抜いた魚をお渡しします。連休最終日はご予約のお受け取り専用日です。臨時変更はお知らせとInstagramで告知します。</p>
+  </div>
+</section>
+
+<section id="news" class="news">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="en">NEWS</p>
+      <h2>お知らせ</h2>
+    </div>
+    <ul>
+      <li><time datetime="2026-07-06">2026.07.06</time><span class="tag">入荷</span><span>今週の旬魚を更新しました。スズキは残りわずかです。</span></li>
+      <li><time datetime="2026-07-01">2026.07.01</time><span class="tag">商品</span><span>真空・急速凍結便の地方発送を開始しました。</span></li>
+      <li><time datetime="2026-06-27">2026.06.27</time><span class="tag">営業</span><span>7月の営業カレンダーを掲載しました。連休最終日は予約受取専用日です。</span></li>
+      <li><time datetime="2026-06-20">2026.06.20</time><span class="tag">お知らせ</span><span>公式サイトを開設しました。</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="reserve">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="en">HOW TO ORDER</p>
+      <h2>ご予約のながれ</h2>
+    </div>
+    <div class="flow-grid">
+      <div class="step">
+        <h3>ご連絡</h3>
+        <p>InstagramのDMまたはメールで、「用途(自宅用/贈答/店舗)・ご予算・受取希望日」をお知らせください。</p>
+      </div>
+      <div class="step">
+        <h3>目利きがご提案</h3>
+        <p>その週の入荷と相場から、いちばん良い組み合わせをご提案します。内容確定でご予約完了です。</p>
+      </div>
+      <div class="step">
+        <h3>お受け取り</h3>
+        <p>金〜日に店頭でお渡し、または急速凍結・真空パックで全国発送。下処理のご希望も承ります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="access" class="access">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="en">ACCESS</p>
+      <h2>店舗・お問い合わせ</h2>
+    </div>
+    <dl>
+      <dt>屋号</dt><dd>TANAKA UO(タナカ ウオ)</dd>
+      <dt>代表</dt><dd>田中 雄一郎(食品衛生責任者/日本水産学会 会員)</dd>
+      <dt>所在地</dt><dd>福岡県柳川市大和町中島883-1</dd>
+      <dt>営業日</dt><dd>金・土・日 10:00–18:00(月〜木は市場仕入れ)</dd>
+      <dt>メール</dt><dd><a href="mailto:tanakauojapan@gmail.com">tanakauojapan@gmail.com</a></dd>
+      <dt>Instagram</dt><dd><a href="https://www.instagram.com/tanakauojapan/">@tanakauojapan</a>(入荷速報はこちら)</dd>
+    </dl>
+  </div>
+</section>
+
+<div class="foot-cta">
+  <div class="wrap">
+    <h2>今週の一尾、ご用意します。</h2>
+    <p>「何が良いか分からない」で大丈夫です。用途とご予算だけお聞かせください。あとは目利きの仕事です。</p>
+    <a class="btn fill" href="mailto:tanakauojapan@gmail.com">魚を予約する</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap ft">
+    <p class="brand">TANAKA UO</p>
+    <p>ROOTED, STILL MOVING.</p>
+    <p>© 2026 TANAKA UO — tanakauo.com</p>
+  </div>
+</footer>
+
+</body>
+</html>
