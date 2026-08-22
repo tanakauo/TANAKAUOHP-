@@ -2,9 +2,14 @@
 
 素の HTML と CSS で TANAKA UO のHPを作成する。
 
-**WordPress は使わない（2026-08-13 に方針変更）。** 完成したHTMLは、そのまま `tanakauo.com` に暫定公開される見込みである。
-`tanakauo.com` は現時点でおそらくWordPressではない。トップページとして固定される必要も無い。
-「本物」が別途WordPressで作られたら、このHTML一式は削除される。詳細は `docs/open-questions.md` §2-3-3。
+完成したHTMLは `tanakauo.com` の現在の内容を差し替えるために使う。トップページとして固定される必要は無い。
+
+**2026-08-22 訂正：`tanakauo.com` は WordPress + SWELL で現に動いている。** 「多分WordPressではない」としていた前提は誤りだった。
+田中氏本人が管理権限を持っており、差し替えは管理画面から行える。詳細は `docs/open-questions.md` §0「技術構成」。
+
+**ただしCodexの作業内容は変わらない。** 素の HTML と CSS で3ページを書く。
+静的HTMLとして置くか、WordPress + SWELL 上で組み直すかは田中氏が決めることであり、
+どちらに転んでも各指示書の設計（書体・配色・禁止事項・原稿・構成）はそのまま使える。
 
 ---
 
